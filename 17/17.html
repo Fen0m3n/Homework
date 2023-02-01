@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		let User1 = { name: "User1", age: 25 };
+		let User2 = { name: "User2", age: 30 };
+		let User3 = { name: "User3", age: 28 };
+
+		let arr = [User1, User2, User3];
+
+		sortByAge(arr);
+
+		function sortByAge(arr) {
+			arr.sort((a, b) => a.age - b.age);
+		}
+
+		console.log(arr)
+	</script>
+</body>
+
+</html>
